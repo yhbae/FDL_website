@@ -1,4 +1,6 @@
 ---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
@@ -16,19 +18,7 @@
   </head>
 
   <body>
-    <header class="navbar">
-      <div class="logo">FDL</div>
-
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#research">Research</a>
-        <a href="#people">People</a>
-        <a href="#publications">Publications</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
+    <Header />
     <main>
       <section id="home" class="hero">
         <div class="hero-content">
@@ -131,14 +121,23 @@
         <div class="section-inner split">
           <div>
             <p class="section-label">PEOPLE</p>
-            <h2>People</h2>
+
+            <h2>
+              People
+            </h2>
           </div>
 
-          <p>
-            Our lab consists of faculty, graduate students, and undergraduate
-            researchers working on offshore dynamics, control, hydrodynamics,
-            and ocean engineering systems.
-          </p>
+          <div>
+            <p>
+              Floater Dynamics Laboratory consists of researchers
+              working on offshore floating systems, marine hydrodynamics,
+              coupled dynamics, and intelligent offshore technologies.
+            </p>
+
+            <a href="/people" class="section-link">
+              View Professor & Members →
+            </a>
+          </div>
         </div>
       </section>
 
@@ -173,9 +172,7 @@
       </section>
     </main>
 
-    <footer>
-      © 2026 Floater Dynamics Laboratory. All rights reserved.
-    </footer>
+    <Footer />
 
     <style>
       :root {
@@ -327,6 +324,22 @@
 
       .section {
         padding: 100px 8%;
+      }
+
+      .section-link {
+      display: inline-block;
+      margin-top: 24px;
+
+      color: #0f766e;
+      font-weight: 600;
+
+      text-decoration: none;
+
+      transition: opacity 0.2s ease;
+      }
+
+      .section-link:hover {
+        opacity: 0.7;
       }
 
       .gray {

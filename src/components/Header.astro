@@ -1,0 +1,75 @@
+<header class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      Floater Dynamics Laboratory
+    </a>
+
+    <nav class="nav-links">
+      <a href="/">Home</a>
+      <a href="/people">People</a>
+      <a href="/">Research</a>
+      <a href="/">Publications</a>
+      <a href="/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    backdrop-filter: blur(12px);
+    background: rgba(255,255,255,0.78);
+
+    border-bottom: 1px solid rgba(15,23,42,0.06);
+  }
+
+  .nav-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    padding: 20px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+
+    text-decoration: none;
+    color: #0f172a;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 28px;
+  }
+
+  .nav-links a {
+    color: #475569;
+    text-decoration: none;
+
+    transition: opacity 0.2s ease;
+  }
+
+  .nav-links a:hover {
+    opacity: 0.7;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 18px;
+      font-size: 14px;
+    }
+
+    .logo {
+      font-size: 17px;
+    }
+  }
+</style>

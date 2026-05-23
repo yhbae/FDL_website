@@ -1,0 +1,137 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import ProfessorProfile from "../components/ProfessorProfile.astro";
+import StudentsSection from "../components/StudentsSection.astro";
+---
+---
+import ProfessorProfile from "../components/ProfessorProfile.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>People | Floater Dynamics Laboratory</title>
+
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #0f766e;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+
+        font-family:
+          Inter,
+          system-ui,
+          sans-serif;
+
+        background:
+          radial-gradient(circle at top left,
+            rgba(14,165,233,0.08),
+            transparent 30%),
+          var(--bg);
+
+        color: var(--text);
+      }
+
+      .navbar {
+        position: sticky;
+        top: 0;
+
+        backdrop-filter: blur(12px);
+        background: rgba(255,255,255,0.75);
+
+        border-bottom: 1px solid rgba(15,23,42,0.06);
+      }
+
+      .nav-inner {
+        max-width: 1180px;
+        margin: 0 auto;
+
+        padding: 20px 28px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 28px;
+      }
+
+      .nav-links a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+
+        padding: 90px 28px 120px;
+      }
+
+      .page-label {
+        color: var(--accent);
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(48px, 8vw, 82px);
+        line-height: 0.95;
+        letter-spacing: -0.05em;
+
+        margin: 0 0 26px;
+      }
+
+      .page-intro {
+        max-width: 720px;
+        font-size: 19px;
+        color: var(--muted);
+
+        margin-bottom: 90px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <p class="page-label">PEOPLE</p>
+
+      <h1>Professor</h1>
+
+      <p class="page-intro">
+        Floater Dynamics Laboratory investigates offshore floating systems,
+        marine hydrodynamics, coupled dynamics,
+        and intelligent offshore control technologies.
+      </p>
+
+      <ProfessorProfile />
+      <StudentsSection />
+    </main>
+    <Footer />
+  </body>
+</html>

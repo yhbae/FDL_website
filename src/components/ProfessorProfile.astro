@@ -1,0 +1,156 @@
+---
+---
+
+<section class="professor-card">
+  <div class="photo-box">
+    YHB
+  </div>
+
+  <div>
+    <h2 class="professor-name">
+      Yoon Hyeok Bae
+    </h2>
+
+    <div class="professor-role">
+      Associate Professor<br />
+      Department of Mechanical & System Design Engineering<br />
+      Hongik University
+    </div>
+
+    <p class="description">
+      Yoon Hyeok Bae is an Associate Professor at Hongik University.
+      His research interests include offshore floating systems,
+      floater–mooring coupled dynamics, marine hydrodynamics,
+      floating offshore wind turbines, digital twins,
+      and offshore control systems.
+    </p>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Education</h3>
+
+        <ul>
+          <li>Ph.D. Ocean Engineering, Texas A&M University</li>
+          <li>M.S. Ocean Engineering, Texas A&M University</li>
+          <li>B.S. Naval Architecture & Ocean Engineering, Seoul National University</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Experience</h3>
+
+        <ul>
+          <li>Associate Professor, Hongik University</li>
+          <li>Faculty, Jeju National University</li>
+          <li>Collaborative Researcher, NREL</li>
+          <li>Postdoctoral Research Associate, Texas A&M</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Research Areas</h3>
+
+        <ul>
+          <li>Offshore Floating Systems</li>
+          <li>Floater–Mooring Coupled Dynamics</li>
+          <li>Marine Hydrodynamics</li>
+          <li>Floating Offshore Wind</li>
+          <li>Digital Twin & Control</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .professor-card {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 64px;
+
+    background: rgba(255,255,255,0.78);
+    border: 1px solid rgba(15,23,42,0.08);
+
+    border-radius: 32px;
+    padding: 48px;
+
+    backdrop-filter: blur(10px);
+  }
+
+  .photo-box {
+    width: 100%;
+    aspect-ratio: 0.78;
+
+    border-radius: 28px;
+
+    background:
+      linear-gradient(135deg,
+        rgba(14,165,233,0.12),
+        rgba(255,255,255,0.7));
+
+    border: 1px solid rgba(15,23,42,0.06);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    color: #0369a1;
+  }
+
+  .professor-name {
+    font-size: 42px;
+    margin: 0 0 14px;
+    letter-spacing: -0.04em;
+  }
+
+  .professor-role {
+    color: #0f766e;
+    font-weight: 600;
+    margin-bottom: 28px;
+  }
+
+  .description {
+    color: #475569;
+    margin-bottom: 42px;
+    max-width: 760px;
+  }
+
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+
+  .info-card h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+
+  .info-card ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #475569;
+  }
+
+  .info-card li {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 980px) {
+    .professor-card {
+      grid-template-columns: 1fr;
+    }
+
+    .info-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .photo-box {
+      max-width: 320px;
+    }
+  }
+</style>
