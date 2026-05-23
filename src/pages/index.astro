@@ -1,0 +1,465 @@
+---
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Floater Dynamics Laboratory</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">FDL</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">FLOATER DYNAMICS LABORATORY</p>
+
+          <h1>Dynamics and Control of Offshore Floating Systems</h1>
+
+          <p class="hero-subtitle">
+            Floater–mooring coupled dynamics, offshore platform motion,
+            hydrodynamic loading, and control of marine systems in complex
+            ocean environments.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#research" class="primary-button">Research Areas</a>
+            <a href="#contact" class="secondary-button">Contact</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="section-inner">
+          <p class="section-label">ABOUT</p>
+          <h2>About FDL</h2>
+
+          <p class="lead">
+            Floater Dynamics Laboratory at Hongik University investigates the
+            dynamics, control, and design of offshore floating systems.
+          </p>
+
+          <p>
+            Our research focuses on the coupled interaction between floating
+            bodies, mooring systems, waves, wind, current, and control systems.
+            We develop numerical models, simulation methods, and analysis
+            frameworks for offshore platforms, floating wind turbines, wave
+            energy systems, and other marine structures operating in harsh ocean
+            environments.
+          </p>
+        </div>
+      </section>
+
+      <section id="research" class="section gray">
+        <div class="section-inner">
+          <p class="section-label">RESEARCH</p>
+          <h2>Research Areas</h2>
+
+          <div class="grid">
+            <article class="card">
+              <h3>Floater–Mooring Coupled Dynamics</h3>
+              <p>
+                Dynamic response analysis of floating bodies coupled with
+                mooring systems under waves, wind, and current.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Offshore Platform Motion</h3>
+              <p>
+                Motion prediction and design analysis of semi-submersibles,
+                TLPs, spars, and other offshore floating platforms.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Control of Marine Systems</h3>
+              <p>
+                Control strategies for floating systems, marine renewable energy
+                devices, and dynamically coupled offshore structures.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Hydrodynamic Loading</h3>
+              <p>
+                Numerical and experimental investigation of wave-induced loads,
+                nonlinear hydrodynamics, and fluid–structure interaction.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Digital Twin & AI</h3>
+              <p>
+                Data-driven modeling, monitoring, prediction, and digital-twin
+                frameworks for offshore floating systems.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Offshore Renewable Systems</h3>
+              <p>
+                Dynamic analysis and design of floating wind turbines, wave
+                energy converters, and hybrid offshore energy systems.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="people" class="section">
+        <div class="section-inner split">
+          <div>
+            <p class="section-label">PEOPLE</p>
+            <h2>People</h2>
+          </div>
+
+          <p>
+            Our lab consists of faculty, graduate students, and undergraduate
+            researchers working on offshore dynamics, control, hydrodynamics,
+            and ocean engineering systems.
+          </p>
+        </div>
+      </section>
+
+      <section id="publications" class="section gray">
+        <div class="section-inner split">
+          <div>
+            <p class="section-label">PUBLICATIONS</p>
+            <h2>Publications</h2>
+          </div>
+
+          <p>
+            Selected publications cover floater–mooring coupled dynamics,
+            offshore platform motion, hydrodynamic loading, floating wind,
+            wave energy, and digital-twin-based marine system analysis.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact" class="section dark">
+        <div class="section-inner">
+          <p class="section-label light">CONTACT</p>
+          <h2>Contact</h2>
+
+          <p>
+            Floater Dynamics Laboratory<br />
+            Hongik University<br />
+            Seoul, Republic of Korea
+          </p>
+
+          <p class="contact-email">Email: yhbae@hongik.ac.kr</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © 2026 Floater Dynamics Laboratory. All rights reserved.
+    </footer>
+
+    <style>
+      :root {
+        --navy: #020617;
+        --text: #1e293b;
+        --muted: #64748b;
+        --light: #f8fafc;
+        --line: #e2e8f0;
+        --accent: #0369a1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Inter", Arial, sans-serif;
+        color: var(--text);
+        background: white;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 76px;
+        z-index: 100;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: 0 8%;
+
+        background: rgba(248, 250, 252, 0.86);
+        backdrop-filter: blur(18px);
+        border-bottom: 1px solid rgba(226, 232, 240, 0.85);
+        box-shadow: 0 4px 20px rgba(15, 23, 42, 0.03);
+      }
+
+      .logo {
+        color: #1e293b;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        font-size: 22px;
+      }
+
+      nav {
+        display: flex;
+        gap: 28px;
+      }
+
+      nav a {
+        color: #334155;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      nav a:hover {
+        color: var(--accent);
+      }
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        padding: 0 8%;
+        color: white;
+
+        background:
+          linear-gradient(
+            90deg,
+            rgba(15, 23, 42, 0.34) 0%,
+            rgba(15, 23, 42, 0.16) 46%,
+            rgba(15, 23, 42, 0.03) 100%
+          ),
+          url("/images/hero.png");
+
+        background-size: cover;
+        background-position: center;
+      }
+
+      .hero-content {
+        max-width: 780px;
+        padding-top: 110px;
+      }
+
+      .eyebrow {
+        margin: 0 0 24px;
+        color: #e0f2fe;
+        font-weight: 800;
+        letter-spacing: 0.22em;
+        font-size: 14px;
+        text-shadow: 0 2px 18px rgba(2, 6, 23, 0.28);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(42px, 6vw, 76px);
+        line-height: 1.05;
+        letter-spacing: -0.045em;
+        font-weight: 700;
+        text-shadow: 0 4px 26px rgba(2, 6, 23, 0.32);
+      }
+
+      .hero-subtitle {
+        margin-top: 28px;
+        max-width: 720px;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: clamp(18px, 2vw, 23px);
+        line-height: 1.7;
+        font-weight: 350;
+        text-shadow: 0 3px 18px rgba(2, 6, 23, 0.32);
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 16px;
+        margin-top: 38px;
+      }
+
+      .primary-button,
+      .secondary-button {
+        display: inline-block;
+        padding: 14px 22px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+      }
+
+      .primary-button {
+        background: #0369a1;
+        color: white;
+        box-shadow: 0 16px 32px rgba(3, 105, 161, 0.22);
+      }
+
+      .secondary-button {
+        background: rgba(255, 255, 255, 0.9);
+        color: #1e293b;
+      }
+
+      .section {
+        padding: 100px 8%;
+      }
+
+      .gray {
+        background: var(--light);
+      }
+
+      .dark {
+        background: var(--navy);
+        color: white;
+      }
+
+      .section-inner {
+        max-width: 1180px;
+        margin: 0 auto;
+      }
+
+      .section-label {
+        margin: 0 0 16px;
+        color: var(--accent);
+        font-size: 13px;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+      }
+
+      .section-label.light {
+        color: #7dd3fc;
+      }
+
+      h2 {
+        margin: 0 0 28px;
+        font-size: clamp(34px, 4vw, 52px);
+        letter-spacing: -0.03em;
+      }
+
+      .lead {
+        font-size: 24px;
+        line-height: 1.6;
+        color: #334155;
+        max-width: 900px;
+      }
+
+      .section p {
+        font-size: 18px;
+        line-height: 1.8;
+        color: #475569;
+        max-width: 920px;
+      }
+
+      .dark p {
+        color: #cbd5e1;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+        margin-top: 44px;
+      }
+
+      .card {
+        background: white;
+        border: 1px solid var(--line);
+        border-radius: 22px;
+        padding: 30px;
+        min-height: 220px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.04);
+      }
+
+      .card h3 {
+        margin: 0 0 16px;
+        font-size: 21px;
+        line-height: 1.35;
+      }
+
+      .card p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: 80px;
+        align-items: start;
+      }
+
+      .contact-email {
+        margin-top: 28px;
+        font-weight: 700;
+      }
+
+      footer {
+        padding: 28px 8%;
+        background: #020617;
+        color: #94a3b8;
+        font-size: 14px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      @media (max-width: 900px) {
+        .navbar {
+          height: auto;
+          padding: 18px 6%;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 14px;
+        }
+
+        nav {
+          flex-wrap: wrap;
+          gap: 14px 20px;
+        }
+
+        .hero {
+          padding: 130px 6% 70px;
+          background-position: center;
+        }
+
+        .section {
+          padding: 80px 6%;
+        }
+
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .split {
+          grid-template-columns: 1fr;
+          gap: 24px;
+        }
+      }
+    </style>
+  </body>
+</html>
