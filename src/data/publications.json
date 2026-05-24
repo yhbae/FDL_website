@@ -1,10 +1,24 @@
 [
   {
+    "year": "2026",
+    "type": "journal-article",
+    "title": "Influence of Hydrodynamic Damping Model on Dynamic Response of Semisubmersible Floating Offshore Wind Turbine",
+    "journal": "Journal of Offshore Mechanics and Arctic Engineering",
+    "doi": "10.1115/1.4071102"
+  },
+  {
     "year": "2025",
     "type": "journal-article",
     "title": "Influence of Wind Direction Variability on Power Prediction in the OpenFAST with Corrected Meteorological Data",
     "journal": "Journal of Marine Science and Engineering",
     "doi": "10.3390/jmse13112106"
+  },
+  {
+    "year": "2025",
+    "type": "journal-article",
+    "title": "Data-driven design and optimization of multi-chamber oscillating water column using CFD and machine learning",
+    "journal": "Ocean Systems Engineering",
+    "doi": "10.12989/OSE.2025.15.2.173"
   },
   {
     "year": "2025",
@@ -19,6 +33,13 @@
     "title": "Design strategy for resonance avoidance to improve the performance of tension leg platform-type floating offshore wind turbines",
     "journal": "Ocean Engineering",
     "doi": "10.1016/j.oceaneng.2024.118080"
+  },
+  {
+    "year": "2024",
+    "type": "journal-article",
+    "title": "Negative Stiffness Mechanism on An Asymmetric Wave Energy Converter by Using A Weakly Nonlinear Potential Model",
+    "journal": "China Ocean Engineering",
+    "doi": "10.1007/s13344-024-0054-6"
   },
   {
     "year": "2024",
@@ -82,20 +103,6 @@
     "title": "INFLUENCE OF HYDRODYNAMIC DAMPING MODEL ON FLOATER AND MOORING RESPONSES OF 10MW CLASS FLOATING OFFSHORE WIND TURBINE",
     "journal": "Proceedings of the International Conference on Offshore Mechanics and Arctic Engineering - OMAE",
     "doi": "10.1115/OMAE2023-107853"
-  },
-  {
-    "year": "2023",
-    "type": "other",
-    "title": "Negative Stiffness Mechanism on an Asymmetric Wave Energy Converter by Using a Weakly Nonlinear Potential Model",
-    "journal": "SSRN",
-    "doi": "10.2139/ssrn.4539007"
-  },
-  {
-    "year": "2023",
-    "type": "other",
-    "title": "Numerical Investigation of the Hydrodynamic Performance of a Pitch-Type Wave Energy Converter on the Basis of Weakly and Fully Nonlinear Models",
-    "journal": "SSRN",
-    "doi": "10.2139/ssrn.4405118"
   },
   {
     "year": "2023",
