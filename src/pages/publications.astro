@@ -1,0 +1,76 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import PublicationsList from "../components/PublicationsList.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications | Floater Dynamics Laboratory</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        background: #f4f7fb;
+        color: #0f172a;
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 90px 28px 120px;
+      }
+
+      .label {
+        color: #0f766e;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(52px, 9vw, 92px);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        margin: 0 0 28px;
+      }
+
+      .intro {
+        max-width: 760px;
+        color: #475569;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <p class="label">PUBLICATIONS</p>
+
+      <h1>
+        Selected
+        <br />
+        Publications
+      </h1>
+
+      <p class="intro">
+        Our publications cover floater–mooring coupled dynamics,
+        offshore floating systems, floating offshore wind turbines,
+        wave energy converters, hydrodynamics, digital twin,
+        and intelligent control of marine systems.
+      </p>
+
+      <PublicationsList />
+    </main>
+
+    <Footer />
+  </body>
+</html>

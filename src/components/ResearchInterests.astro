@@ -1,0 +1,171 @@
+<section class="research-interests">
+  <div class="section-header">
+    <p class="section-label">
+      RESEARCH INTERESTS
+    </p>
+
+    <h2>
+      Dynamics, Control,
+      <br />
+      and Future Offshore Systems
+    </h2>
+
+    <p class="section-description">
+      Floater Dynamics Laboratory investigates advanced offshore systems
+      through coupled hydrodynamics, intelligent control,
+      numerical simulation, and digital engineering technologies.
+    </p>
+  </div>
+
+  <div class="interest-grid">
+    <article class="interest-card">
+      <h3>Offshore Floating Systems</h3>
+
+      <p>
+        Dynamics and performance analysis of floating offshore platforms
+        including semi-submersibles, TLPs, spars,
+        and next-generation ocean structures.
+      </p>
+    </article>
+
+    <article class="interest-card">
+      <h3>Floater–Mooring Coupled Dynamics</h3>
+
+      <p>
+        Fully coupled time-domain analysis of offshore floating bodies,
+        mooring systems, and environmental loads
+        under extreme ocean conditions.
+      </p>
+    </article>
+
+    <article class="interest-card">
+      <h3>Marine Hydrodynamics</h3>
+
+      <p>
+        Investigation of nonlinear wave-body interaction,
+        radiation/diffraction phenomena,
+        and computational offshore hydrodynamics.
+      </p>
+    </article>
+
+    <article class="interest-card">
+      <h3>Floating Offshore Wind Turbines</h3>
+
+      <p>
+        Coupled aero-hydro-servo-elastic dynamics,
+        platform optimization,
+        and structural response analysis for floating wind systems.
+      </p>
+    </article>
+
+    <article class="interest-card">
+      <h3>Digital Twin & AI</h3>
+
+      <p>
+        Data-driven offshore system monitoring,
+        digital twin frameworks,
+        and AI-assisted prediction for marine structures.
+      </p>
+    </article>
+
+    <article class="interest-card">
+      <h3>Offshore Control Systems</h3>
+
+      <p>
+        Advanced offshore control methodologies
+        for motion stabilization,
+        energy optimization,
+        and intelligent marine operations.
+      </p>
+    </article>
+  </div>
+</section>
+
+<style>
+  .research-interests {
+    margin-top: 120px;
+  }
+
+  .section-header {
+    margin-bottom: 56px;
+  }
+
+  .section-label {
+    color: #0f766e;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+
+    margin: 0 0 24px;
+  }
+
+  .section-description {
+    max-width: 760px;
+
+    color: #475569;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .interest-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+  }
+
+  .interest-card {
+    background: rgba(255,255,255,0.76);
+
+    border: 1px solid rgba(15,23,42,0.08);
+    border-radius: 30px;
+
+    padding: 34px;
+
+    backdrop-filter: blur(10px);
+
+    min-height: 260px;
+
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+
+  .interest-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(14,165,233,0.22);
+
+    box-shadow:
+      0 20px 40px rgba(15,23,42,0.06);
+  }
+
+  .interest-card h3 {
+    margin: 0 0 18px;
+
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .interest-card p {
+    margin: 0;
+
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 980px) {
+    .interest-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

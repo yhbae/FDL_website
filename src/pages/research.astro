@@ -1,0 +1,101 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import FundedProjects from "../components/FundedProjects.astro";
+import ResearchInterests from "../components/ResearchInterests.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Research | Floater Dynamics Laboratory</title>
+
+    <style>
+      :root {
+        --bg: #f4f7fb;
+        --text: #0f172a;
+        --muted: #475569;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+
+        font-family:
+          Inter,
+          system-ui,
+          sans-serif;
+
+        background:
+          radial-gradient(circle at top left,
+            rgba(14,165,233,0.08),
+            transparent 30%),
+          var(--bg);
+
+        color: var(--text);
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+
+        padding: 90px 28px 120px;
+      }
+
+      .intro-label {
+        color: #0f766e;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(52px, 9vw, 92px);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+
+        margin: 0 0 28px;
+      }
+
+      .intro-text {
+        max-width: 760px;
+
+        color: var(--muted);
+        font-size: 20px;
+        line-height: 1.8;
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <p class="intro-label">RESEARCH</p>
+
+      <h1>
+        Offshore Dynamics
+        <br />
+        & Floating Systems
+      </h1>
+
+      <p class="intro-text">
+        Floater Dynamics Laboratory investigates coupled offshore system
+        dynamics, marine hydrodynamics, offshore control technologies,
+        digital twins, and future ocean engineering systems.
+      </p>
+
+      <ResearchInterests />
+      <FundedProjects />
+    </main>
+
+    <Footer />
+  </body>
+</html>

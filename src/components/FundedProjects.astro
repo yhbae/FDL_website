@@ -1,0 +1,308 @@
+---
+const principalInvestigatorProjects = [
+  {
+    period: "2025",
+    sponsor: "Samsung Heavy Industries",
+    title:
+      "Development of a Numerical Analysis Model for Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2024",
+    sponsor: "KRISO",
+    title:
+      "Performance Analysis Study of a Novel Floating Offshore Wind Turbine Concept",
+  },
+
+  {
+    period: "2024–2027",
+    sponsor: "KIAT",
+    title:
+      "Spanish–Korean Improvements in LCOE Reduction and High-Density Wind Farm Layouts with a Floating Multi-Turbine Solution (SKILLS)",
+  },
+
+  {
+    period: "2024",
+    sponsor: "Korea Institute of Energy Research",
+    title:
+      "Frequency Influence Analysis for a 2-Bladed TLP-Type Floating Offshore Wind Turbine",
+  },
+
+  {
+    period: "2024",
+    sponsor: "POSCO",
+    title:
+      "Optimization of Morison Coefficients by Floating Body Shape and Incident Wave Frequency",
+  },
+
+  {
+    period: "2023–2024",
+    sponsor: "Samsung Heavy Industries",
+    title:
+      "Design of a Floater–Mooring System for 15–20 MW Class Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2023",
+    sponsor: "Korea Institute of Energy Research",
+    title:
+      "Transient Response and Load Analysis under Extreme Conditions of TLP-Type Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2022–2023",
+    sponsor: "POSCO",
+    title:
+      "Design Study for Hybrid Mooring System Arrangement of Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2023–2025",
+    sponsor: "Ministry of Oceans and Fisheries",
+    title:
+      "Development of Fixed Offshore Green Hydrogen Production Technology Connected to Marine Renewable Energy",
+  },
+
+  {
+    period: "2021–2022",
+    sponsor: "Ministry of Trade, Industry and Energy",
+    title:
+      "Innovative Technology Research Center for Floating Offshore Foundations",
+  },
+
+  {
+    period: "2021–2022",
+    sponsor: "POSCO",
+    title:
+      "Verification Study for Substructure Design of Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2021",
+    sponsor: "Marine Tech-In",
+    title:
+      "Analysis of Ocean Environmental Conditions for Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2021–2024",
+    sponsor: "National Research Foundation of Korea",
+    title:
+      "Optimal Control of Pitch-Type Wave Energy Converters Using Reinforcement Learning",
+  },
+
+  {
+    period: "2017–2020",
+    sponsor: "National Research Foundation of Korea",
+    title:
+      "Contra-Rotating Vertical Axis Wind Turbines for Motion Stability of Floating Platforms",
+  },
+
+  {
+    period: "2016–2021",
+    sponsor: "Ministry of Trade, Industry and Energy",
+    title:
+      "Development of Fundamental Technologies for a 1 MW Class Arrayed-Buoy Wave Energy Converter under Various Sea Conditions",
+  },
+
+  {
+    period: "2015–2016",
+    sponsor: "POSCO",
+    title:
+      "Design Basis and Coupled Analysis for Floating Offshore Wind Turbines",
+  },
+
+  {
+    period: "2015–2016",
+    sponsor: "KRISO",
+    title:
+      "Development of a Two-Way Coupled Dynamic Analysis Program for a Wave–Offshore Wind Hybrid Power Generation Platform with Wave Energy Converters",
+  },
+
+  {
+    period: "2014–2015",
+    sponsor: "KRISO",
+    title:
+      "Development of a One-Way Coupled Dynamic Analysis Program for a Wave–Offshore Wind Hybrid Power Generation Platform with Wave Energy Converters",
+  },
+];
+
+const coInvestigatorProjects = [
+  {
+    period: "2014–2016",
+    sponsor: "Korea Institute of Energy Research",
+    title:
+      "Floater Design for a Floating Metocean Data Measurement System",
+  },
+
+  {
+    period: "2014–2016",
+    sponsor: "KRISO",
+    title:
+      "Development of Wave Energy Converters for a Wave–Offshore Wind Hybrid Power Generation Platform",
+  },
+];
+---
+
+<section class="funded-section">
+  <div class="section-header">
+    <p class="section-label">
+      FUNDED RESEARCH
+    </p>
+
+    <h2>
+      Sponsored Research Projects
+    </h2>
+
+    <p class="section-description">
+      Floater Dynamics Laboratory has conducted research projects
+      supported by government agencies, national laboratories,
+      and offshore industries in the fields of offshore floating systems,
+      marine renewable energy, hydrodynamics, and coupled dynamics.
+    </p>
+  </div>
+
+  <div class="research-group">
+    <h3>
+      Principal Investigator
+    </h3>
+
+    <div class="project-grid">
+      {principalInvestigatorProjects.map((project) => (
+        <article class="project-card">
+          <div class="project-meta">
+            <span>{project.period}</span>
+            <span>{project.sponsor}</span>
+          </div>
+
+          <h4>{project.title}</h4>
+        </article>
+      ))}
+    </div>
+  </div>
+
+  <div class="research-group">
+    <h3>
+      Co-Investigator
+    </h3>
+
+    <div class="project-grid">
+      {coInvestigatorProjects.map((project) => (
+        <article class="project-card compact">
+          <div class="project-meta">
+            <span>{project.period}</span>
+            <span>{project.sponsor}</span>
+          </div>
+
+          <h4>{project.title}</h4>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .funded-section {
+    margin-top: 90px;
+  }
+
+  .section-header {
+    margin-bottom: 64px;
+  }
+
+  .section-label {
+    color: #0f766e;
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+
+    margin-bottom: 18px;
+  }
+
+  .section-header h2 {
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 0.96;
+    letter-spacing: -0.05em;
+
+    margin: 0 0 24px;
+  }
+
+  .section-description {
+    max-width: 760px;
+
+    color: #475569;
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+  .research-group {
+    margin-top: 72px;
+  }
+
+  .research-group h3 {
+    font-size: 30px;
+    letter-spacing: -0.03em;
+
+    margin: 0 0 28px;
+  }
+
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .project-card {
+    background: rgba(255,255,255,0.78);
+
+    border: 1px solid rgba(15,23,42,0.08);
+    border-radius: 28px;
+
+    padding: 32px;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+      transform 0.22s ease,
+      border-color 0.22s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(14,165,233,0.28);
+  }
+
+  .project-card.compact {
+    min-height: auto;
+  }
+
+  .project-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    margin-bottom: 18px;
+
+    color: #0f766e;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+  }
+
+  .project-card h4 {
+    margin: 0;
+
+    font-size: 22px;
+    line-height: 1.45;
+    letter-spacing: -0.03em;
+
+    color: #0f172a;
+  }
+
+  @media (max-width: 980px) {
+    .project-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
