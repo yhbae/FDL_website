@@ -1,89 +1,55 @@
 ---
-const journals = [
-  {
-    year: "2026",
-    text: "Kim, D., Lee, Y., Poguluri, S. K., Kim, E., Park, J. Y., Ha, Y. J., Kim, J. B. & Bae, Y. H. (2026). Influence of Hydrodynamic Damping Model on Dynamic Response of Semisubmersible Floating Offshore Wind Turbine. Journal of Offshore Mechanics and Arctic Engineering, 148(4), 042002.",
-  },
-  {
-    year: "2025",
-    text: "Lee, Y., Kim, E. & Bae, Y. H. (2025). Calculation of Hydrodynamic Forces on Floating Offshore Wind Turbine Substructure Using Modified Morison's Equation. Journal of Wind Energy, 16(3), 166–176.",
-  },
-  {
-    year: "2025",
-    text: "Im, D., Lee, Y. & Bae, Y. H. (2025). Influence of Wind Direction Variability on Power Prediction in the OpenFAST with Corrected Meteorological Data. Journal of Marine Science and Engineering, 13(11), 2106.",
-  },
-  {
-    year: "2025",
-    text: "Im, D., Kim, D. & Bae, Y. H. (2025). Analysis of the Seabed Contact Effects of Clump Weights on a Floating Offshore Wind Mooring System. Journal of Ocean Engineering and Technology, 39(2), 142–151.",
-  },
-  {
-    year: "2024",
-    text: "Poguluri, S. K., Kim, D. & Bae, Y. H. (2024). Negative stiffness mechanism on an asymmetric wave energy converter by using a weakly nonlinear potential model. China Ocean Engineering, 38, 689–700.",
-  },
-  {
-    year: "2024",
-    text: "Kim, D., Bae, Y. H. & Park, S. (2024). Design strategy for resonance avoidance to improve the performance of tension leg platform-type floating offshore wind turbines. Ocean Engineering, 306, 118080.",
-  },
-  {
-    year: "2024",
-    text: "Kim, D. & Bae, Y. H. (2024). Multibody Analysis of Wave Energy Converters and Floating Platform in the Time Domain. Journal of Marine Science and Engineering, 12(2), 265.",
-  },
-  {
-    year: "2024",
-    text: "Poguluri, S. K. & Bae, Y. H. (2024). Enhancing Wave Energy Conversion Efficiency through Supervised Regression Machine Learning Models. Journal of Marine Science and Engineering, 12(1), 153.",
-  },
-  {
-    year: "2023",
-    text: "Kim, D., Lee, Y. & Bae, Y. H. (2023). The effect of heaving motion of multiple wave energy converters installed on a floating platform on global performance. Ocean Systems Engineering, 13(4), 349–365.",
-  },
-  {
-    year: "2023",
-    text: "Lee, Y., Kim, D. & Bae, Y. H. (2023). Study on Ballast Control Algorithm for Pitch-type Wave Energy Converter under Regular Wave Conditions. Journal of the Korean Society for Marine Environment and Energy, 26(3), 292–301.",
-  },
-];
+import publications from "../data/publications.json";
 
-const conferences = [
-  {
-    year: "2023",
-    text: "Poguluri, S. K., Kim, D., Bae, Y. H. Evaluation of Negative Stiffness Mechanism on a Pitch-Type Wave Energy Converter. Proc. 33rd International Offshore and Polar Engineering Conference, Ottawa, 2023.",
-  },
-  {
-    year: "2023",
-    text: "Kim, E., Kim, D., Poguluri, S. K., Bae, Y. H., Ha, Y. J., Park, J. Y., Kim, J. Influence of Hydrodynamic Damping Model on Floater and Mooring Responses of 10 MW Class Floating Offshore Wind Turbine. Proc. 42nd International Offshore Mechanics and Arctic Engineering Conference, Melbourne, 2023.",
-  },
-  {
-    year: "2022",
-    text: "Poguluri, S. K., Kim, D., Lee, Y., Bae, Y. H. Design Optimization of a Pitch-Type Asymmetric Wave Energy Converter Based on Artificial Neural Network. Proc. 1st Global Conference on Naval Architecture and Ocean Engineering, Changwon, 2022.",
-  },
-];
+const grouped = publications.reduce((acc, pub) => {
+  const year = pub.year || "Unknown";
+
+  if (!acc[year]) {
+    acc[year] = [];
+  }
+
+  acc[year].push(pub);
+
+  return acc;
+}, {});
+
+const years = Object.keys(grouped).sort((a, b) => Number(b) - Number(a));
 ---
 
 <section class="publications">
-  <div class="pub-group">
-    <h2>Refereed Journals</h2>
+  {years.map((year) => (
+    <div class="year-group">
+      <h2>{year}</h2>
 
-    <div class="pub-list">
-      {journals.map((pub) => (
-        <article class="pub-item">
-          <div class="year">{pub.year}</div>
-          <p>{pub.text}</p>
-        </article>
-      ))}
+      <div class="pub-list">
+        {grouped[year].map((pub) => (
+          <article class="pub-card">
+            <div class="pub-type">
+              {pub.type}
+            </div>
+
+            <h3>
+              {pub.title}
+            </h3>
+
+            <p class="journal">
+              {pub.journal}
+            </p>
+
+            {pub.doi && (
+              <a
+                href={`https://doi.org/${pub.doi}`}
+                target="_blank"
+                class="doi-link"
+              >
+                DOI →
+              </a>
+            )}
+          </article>
+        ))}
+      </div>
     </div>
-  </div>
-
-  <div class="pub-group">
-    <h2>International Conference Proceedings</h2>
-
-    <div class="pub-list">
-      {conferences.map((pub) => (
-        <article class="pub-item">
-          <div class="year">{pub.year}</div>
-          <p>{pub.text}</p>
-        </article>
-      ))}
-    </div>
-  </div>
+  ))}
 </section>
 
 <style>
@@ -93,44 +59,84 @@ const conferences = [
     gap: 90px;
   }
 
-  .pub-group h2 {
-    font-size: clamp(34px, 5vw, 56px);
-    letter-spacing: -0.05em;
+  .year-group h2 {
+    font-size: clamp(42px, 6vw, 72px);
+
     margin: 0 0 36px;
+
+    letter-spacing: -0.05em;
   }
 
   .pub-list {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 22px;
   }
 
-  .pub-item {
-    display: grid;
-    grid-template-columns: 90px 1fr;
-    gap: 28px;
-    background: rgba(255, 255, 255, 0.78);
-    border: 1px solid rgba(15, 23, 42, 0.08);
-    border-radius: 24px;
-    padding: 26px 30px;
+  .pub-card {
+    background: rgba(255,255,255,0.78);
+
+    border: 1px solid rgba(15,23,42,0.08);
+    border-radius: 28px;
+
+    padding: 30px;
+
+    backdrop-filter: blur(10px);
+
+    transition:
+      transform 0.22s ease,
+      border-color 0.22s ease;
   }
 
-  .year {
+  .pub-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(14,165,233,0.25);
+  }
+
+  .pub-type {
     color: #0f766e;
-    font-weight: 800;
-    letter-spacing: 0.04em;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+
+    margin-bottom: 14px;
   }
 
-  .pub-item p {
+  .pub-card h3 {
+    margin: 0 0 16px;
+
+    font-size: 28px;
+    line-height: 1.3;
+    letter-spacing: -0.03em;
+  }
+
+  .journal {
     margin: 0;
-    color: #334155;
+
+    color: #475569;
     line-height: 1.8;
   }
 
+  .doi-link {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #0369a1;
+    font-weight: 700;
+
+    text-decoration: none;
+  }
+
+  .doi-link:hover {
+    opacity: 0.72;
+  }
+
   @media (max-width: 760px) {
-    .pub-item {
-      grid-template-columns: 1fr;
-      gap: 8px;
+    .pub-card h3 {
+      font-size: 22px;
     }
   }
 </style>
