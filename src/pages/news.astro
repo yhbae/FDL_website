@@ -1,0 +1,129 @@
+---
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { news } from "../data/news";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News | Floater Dynamics Laboratory</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        background: #f4f7fb;
+        color: #0f172a;
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 90px 28px 120px;
+      }
+
+      .label {
+        color: #0f766e;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(52px, 9vw, 92px);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        margin: 0 0 28px;
+      }
+
+      .intro {
+        max-width: 760px;
+        color: #475569;
+        font-size: 20px;
+        line-height: 1.8;
+        margin-bottom: 70px;
+      }
+
+      .news-table {
+        background: rgba(255, 255, 255, 0.78);
+        border: 1px solid rgba(15, 23, 42, 0.08);
+        border-radius: 28px;
+        overflow: hidden;
+      }
+
+      .news-row {
+        display: grid;
+        grid-template-columns: 140px 160px 1fr;
+        gap: 24px;
+        padding: 26px 30px;
+        border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+      }
+
+      .news-row:last-child {
+        border-bottom: none;
+      }
+
+      .date {
+        color: #0f766e;
+        font-weight: 800;
+      }
+
+      .category {
+        color: #64748b;
+        font-weight: 700;
+      }
+
+      .title {
+        font-weight: 700;
+        font-size: 18px;
+      }
+
+      .description {
+        margin-top: 8px;
+        color: #475569;
+        line-height: 1.7;
+      }
+
+      @media (max-width: 760px) {
+        .news-row {
+          grid-template-columns: 1fr;
+          gap: 8px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <p class="label">NEWS</p>
+
+      <h1>News</h1>
+
+      <p class="intro">
+        Updates from Floater Dynamics Laboratory, including publications,
+        projects, conferences, awards, and lab activities.
+      </p>
+
+      <section class="news-table">
+        {news.map((item) => (
+          <article class="news-row">
+            <div class="date">{item.date}</div>
+            <div class="category">{item.category}</div>
+
+            <div>
+              <div class="title">{item.title}</div>
+              <div class="description">{item.description}</div>
+            </div>
+          </article>
+        ))}
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>

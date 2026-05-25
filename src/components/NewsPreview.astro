@@ -1,0 +1,120 @@
+---
+import { news } from "../data/news";
+
+const latestNews = news.slice(0, 3);
+---
+
+<section class="news-preview">
+  <div class="news-header">
+    <div>
+      <p class="section-label">NEWS</p>
+      <h2>Latest News</h2>
+    </div>
+
+    <a href="/news" class="view-all">View all news →</a>
+  </div>
+
+  <div class="news-list">
+    {latestNews.map((item) => (
+      <article class="news-item">
+        <div class="news-date">{item.date}</div>
+
+        <div>
+          <p class="news-category">{item.category}</p>
+          <h3>{item.title}</h3>
+          <p>{item.description}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>
+
+<style>
+  .news-preview {
+    padding: 100px 8%;
+    background: #f8fafc;
+  }
+
+  .news-header {
+    max-width: 1180px;
+    margin: 0 auto 42px;
+
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .section-label {
+    margin: 0 0 16px;
+    color: #0369a1;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.18em;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: clamp(34px, 4vw, 52px);
+    letter-spacing: -0.03em;
+  }
+
+  .view-all {
+    color: #0369a1;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .news-list {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .news-item {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 24px;
+    padding: 28px;
+    min-height: 230px;
+  }
+
+  .news-date {
+    color: #0369a1;
+    font-weight: 800;
+    margin-bottom: 22px;
+  }
+
+  .news-category {
+    margin: 0 0 10px;
+    color: #64748b;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  .news-item h3 {
+    margin: 0 0 14px;
+    font-size: 22px;
+    line-height: 1.35;
+  }
+
+  .news-item p {
+    color: #475569;
+    line-height: 1.7;
+  }
+
+  @media (max-width: 900px) {
+    .news-header {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .news-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
