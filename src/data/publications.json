@@ -44,6 +44,13 @@
   {
     "year": "2024",
     "type": "journal-article",
+    "title": "A numerical investigation of the thermal characteristics of supercritical carbon dioxide (sCO2) flowing through mini serpentine channels",
+    "journal": "Applied Thermal Engineering",
+    "doi": "10.1016/j.applthermaleng.2024.123023"
+  },
+  {
+    "year": "2024",
+    "type": "journal-article",
     "title": "A Numerical Investigation of the Hydrodynamic Performance of a Pitch-Type Wave Energy Converter Using Weakly and Fully Nonlinear Models",
     "journal": "Energies",
     "doi": "10.3390/en17040898"
@@ -61,13 +68,6 @@
     "title": "Enhancing Wave Energy Conversion Efficiency through Supervised Regression Machine Learning Models",
     "journal": "Journal of Marine Science and Engineering",
     "doi": "10.3390/jmse12010153"
-  },
-  {
-    "year": "2024",
-    "type": "journal-article",
-    "title": "A numerical investigation of the thermal characteristics of supercritical carbon dioxide (sCO<sub>2</sub>) flowing through mini serpentine channels",
-    "journal": "Applied Thermal Engineering",
-    "doi": "10.1016/j.applthermaleng.2024.123023"
   },
   {
     "year": "2023",
