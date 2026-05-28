@@ -3,7 +3,7 @@
     "year": "2026",
     "type": "journal-article",
     "title": "Influence of Hydrodynamic Damping Model on Dynamic Response of Semisubmersible Floating Offshore Wind Turbine",
-    "journal": "Journal of Offshore Mechanics and Arctic Engineering",
+    "journal": "JOURNAL OF OFFSHORE MECHANICS AND ARCTIC ENGINEERING-TRANSACTIONS OF THE ASME",
     "doi": "10.1115/1.4071102"
   },
   {
@@ -16,9 +16,9 @@
   {
     "year": "2025",
     "type": "journal-article",
-    "title": "Data-driven design and optimization of multi-chamber oscillating water column using CFD and machine learning",
-    "journal": "Ocean Systems Engineering",
-    "doi": "10.12989/OSE.2025.15.2.173"
+    "title": "Calculation of Hydrodynamic Forces on Floating Offshore Wind Turbine Substructure Using Modified Morison's Equation",
+    "journal": "Journal of Wind Energy",
+    "doi": "10.33519/KWEA.2025.16.3.016"
   },
   {
     "year": "2025",
@@ -28,53 +28,60 @@
     "doi": "10.26748/KSOE.2024.102"
   },
   {
-    "year": "2024",
+    "year": "2025",
     "type": "journal-article",
-    "title": "Design strategy for resonance avoidance to improve the performance of tension leg platform-type floating offshore wind turbines",
-    "journal": "Ocean Engineering",
-    "doi": "10.1016/j.oceaneng.2024.118080"
+    "title": "CALCULATION OF HYDRODYNAMIC FORCES ON FLOATING OFFSHORE WIND TURBINES USING AN OPTIMIZED MORISON INERTIA COEFFICIENT METHOD",
+    "journal": "PROCEEDINGS OF ASME 2025 44TH INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE AND ARCTIC ENGINEERING, OMAE2025, VOL 5",
+    "doi": ""
   },
   {
-    "year": "2024",
+    "year": "2025",
     "type": "journal-article",
-    "title": "Negative Stiffness Mechanism on An Asymmetric Wave Energy Converter by Using A Weakly Nonlinear Potential Model",
-    "journal": "China Ocean Engineering",
-    "doi": "10.1007/s13344-024-0054-6"
-  },
-  {
-    "year": "2024",
-    "type": "journal-article",
-    "title": "A numerical investigation of the thermal characteristics of supercritical carbon dioxide (sCO2) flowing through mini serpentine channels",
-    "journal": "Applied Thermal Engineering",
-    "doi": "10.1016/j.applthermaleng.2024.123023"
+    "title": "Data-driven design and optimization of multi-chamber oscillating water column using CFD and machine learning",
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
+    "doi": "10.12989/OSE.2025.15.2.173"
   },
   {
     "year": "2024",
     "type": "journal-article",
     "title": "A Numerical Investigation of the Hydrodynamic Performance of a Pitch-Type Wave Energy Converter Using Weakly and Fully Nonlinear Models",
-    "journal": "Energies",
-    "doi": "10.3390/en17040898"
+    "journal": "ENERGIES",
+    "doi": "10.3390/EN17040898"
   },
   {
     "year": "2024",
     "type": "journal-article",
-    "title": "Multibody Analysis of Wave Energy Converters and a Floating Platform in the Time Domain",
-    "journal": "Journal of Marine Science and Engineering",
-    "doi": "10.3390/jmse12020265"
+    "title": "A numerical investigation of the thermal characteristics of supercritical carbon dioxide (sCO2) flowing through mini serpentine channels",
+    "journal": "APPLIED THERMAL ENGINEERING",
+    "doi": "10.1016/J.APPLTHERMALENG.2024.123023"
+  },
+  {
+    "year": "2024",
+    "type": "journal-article",
+    "title": "Design strategy for resonance avoidance to improve the performance of tension leg platform-type floating offshore wind turbines",
+    "journal": "OCEAN ENGINEERING",
+    "doi": "10.1016/J.OCEANENG.2024.118080"
   },
   {
     "year": "2024",
     "type": "journal-article",
     "title": "Enhancing Wave Energy Conversion Efficiency through Supervised Regression Machine Learning Models",
-    "journal": "Journal of Marine Science and Engineering",
-    "doi": "10.3390/jmse12010153"
+    "journal": "JOURNAL OF MARINE SCIENCE AND ENGINEERING",
+    "doi": "10.3390/JMSE12010153"
   },
   {
-    "year": "2023",
+    "year": "2024",
     "type": "journal-article",
-    "title": "Numerical study for nonlinear hydrodynamic coefficients of an asymmetric wave energy converter",
-    "journal": "Renewable Energy",
-    "doi": "10.1016/j.renene.2023.06.023"
+    "title": "Multibody Analysis of Wave Energy Converters and a Floating Platform in the Time Domain",
+    "journal": "JOURNAL OF MARINE SCIENCE AND ENGINEERING",
+    "doi": "10.3390/JMSE12020265"
+  },
+  {
+    "year": "2024",
+    "type": "journal-article",
+    "title": "Negative Stiffness Mechanism on An Asymmetric Wave Energy Converter by Using A Weakly Nonlinear Potential Model",
+    "journal": "CHINA OCEAN ENGINEERING",
+    "doi": "10.1007/S13344-024-0054-6"
   },
   {
     "year": "2023",
@@ -87,8 +94,8 @@
     "year": "2023",
     "type": "journal-article",
     "title": "Design optimization of asymmetric wave energy converter using artificial neural network model",
-    "journal": "International Journal of Naval Architecture and Ocean Engineering",
-    "doi": "10.1016/j.ijnaoe.2023.100529"
+    "journal": "INTERNATIONAL JOURNAL OF NAVAL ARCHITECTURE AND OCEAN ENGINEERING",
+    "doi": "10.1016/J.IJNAOE.2023.100529"
   },
   {
     "year": "2023",
@@ -99,38 +106,38 @@
   },
   {
     "year": "2023",
-    "type": "conference-paper",
+    "type": "journal-article",
     "title": "INFLUENCE OF HYDRODYNAMIC DAMPING MODEL ON FLOATER AND MOORING RESPONSES OF 10MW CLASS FLOATING OFFSHORE WIND TURBINE",
-    "journal": "Proceedings of the International Conference on Offshore Mechanics and Arctic Engineering - OMAE",
-    "doi": "10.1115/OMAE2023-107853"
+    "journal": "PROCEEDINGS OF ASME 2023 42ND INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE & ARCTIC ENGINEERING, OMAE2023, VOL 8",
+    "doi": ""
+  },
+  {
+    "year": "2023",
+    "type": "journal-article",
+    "title": "Numerical study for nonlinear hydrodynamic coefficients of an asymmetric wave energy converter",
+    "journal": "RENEWABLE ENERGY",
+    "doi": "10.1016/J.RENENE.2023.06.023"
   },
   {
     "year": "2023",
     "type": "journal-article",
     "title": "The effect of heaving motion of multiple wave energy converters installed on a floating platform on global performance",
-    "journal": "Ocean Systems Engineering",
-    "doi": "10.12989/ose.2023.13.4.349"
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
+    "doi": "10.12989/OSE.2023.13.4.349"
   },
   {
     "year": "2022",
     "type": "journal-article",
     "title": "Development and verification of a dynamic analysis model for floating offshore contra-rotating vertical-axis wind turbine",
-    "journal": "Energy",
-    "doi": "10.1016/j.energy.2021.122492"
+    "journal": "ENERGY",
+    "doi": "10.1016/J.ENERGY.2021.122492"
   },
   {
     "year": "2022",
     "type": "journal-article",
     "title": "Performance assessment of pitch-type wave energy converter in irregular wave conditions on the basis of numerical investigation",
-    "journal": "Ocean Systems Engineering",
-    "doi": "10.12989/ose.2022.12.1.023"
-  },
-  {
-    "year": "2021",
-    "type": "journal-article",
-    "title": "Hydrodynamic Analysis of a Multibody Wave Energy Converter in Regular Waves",
-    "journal": "Processes",
-    "doi": "10.3390/pr9071233"
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
+    "doi": "10.12989/OSE.2022.12.1.023"
   },
   {
     "year": "2021",
@@ -142,23 +149,23 @@
   {
     "year": "2021",
     "type": "journal-article",
-    "title": "Study on Optimum Power Take-Off Torque of an Asymmetric Wave Energy Converter in Western Sea of Jeju Island",
-    "journal": "Energies",
-    "doi": "10.3390/en14051449"
+    "title": "An investigation on the aerodynamic performance of a co-axial contra-rotating vertical-axis wind turbine",
+    "journal": "ENERGY",
+    "doi": "10.1016/J.ENERGY.2020.119547"
   },
   {
     "year": "2021",
     "type": "journal-article",
-    "title": "An investigation on the aerodynamic performance of a co-axial contra-rotating vertical-axis wind turbine",
-    "journal": "Energy",
-    "doi": "10.1016/j.energy.2020.119547"
+    "title": "Hydrodynamic Analysis of a Multibody Wave Energy Converter in Regular Waves",
+    "journal": "PROCESSES",
+    "doi": "10.3390/PR9071233"
   },
   {
-    "year": "2020",
+    "year": "2021",
     "type": "journal-article",
-    "title": "CFD investigation of pitch-type wave energy converter-rotor based on RANS simulations",
-    "journal": "Ships and Offshore Structures",
-    "doi": "10.1080/17445302.2019.1705632"
+    "title": "Study on Optimum Power Take-Off Torque of an Asymmetric Wave Energy Converter in Western Sea of Jeju Island",
+    "journal": "ENERGIES",
+    "doi": "10.3390/EN14051449"
   },
   {
     "year": "2020",
@@ -170,9 +177,16 @@
   {
     "year": "2020",
     "type": "journal-article",
+    "title": "CFD investigation of pitch-type wave energy converter-rotor based on RANS simulations",
+    "journal": "SHIPS AND OFFSHORE STRUCTURES",
+    "doi": "10.1080/17445302.2019.1705632"
+  },
+  {
+    "year": "2020",
+    "type": "journal-article",
     "title": "Optimal performance studies of a horizontal eccentric cylinder-type WEC in western sea of Jeju island with linear inviscid and nonlinear viscous numerical model",
-    "journal": "Ocean Engineering",
-    "doi": "10.1016/j.oceaneng.2020.107180"
+    "journal": "OCEAN ENGINEERING",
+    "doi": "10.1016/J.OCEANENG.2020.107180"
   },
   {
     "year": "2019",
@@ -205,9 +219,16 @@
   {
     "year": "2019",
     "type": "journal-article",
-    "title": "A Study of the Hydrodynamic Performance of a Pitch-type Wave Energy Converter–Rotor",
-    "journal": "Energies",
-    "doi": "10.3390/en12050842"
+    "title": "A Study of the Hydrodynamic Performance of a Pitch-type Wave Energy Converter-Rotor",
+    "journal": "ENERGIES",
+    "doi": "10.3390/EN12050842"
+  },
+  {
+    "year": "2019",
+    "type": "journal-article",
+    "title": "Numerical and Experimental Study of a Horizontal Cylinder-type Wave Energy Converter with Off-centered Axes of Rotation",
+    "journal": "INTERNATIONAL JOURNAL OF OFFSHORE AND POLAR ENGINEERING",
+    "doi": "10.17736/IJOPE.2019.JC747"
   },
   {
     "year": "2019",
@@ -215,13 +236,6 @@
     "title": "Numerical and experimental study for nonlinear dynamic behavior of an asymmetric wave energy converter",
     "journal": "Proceedings of the International Offshore and Polar Engineering Conference",
     "doi": ""
-  },
-  {
-    "year": "2019",
-    "type": "journal-article",
-    "title": "Numerical and experimental study of a horizontal cylinder-type wave energy converter with off-centered axes of rotation",
-    "journal": "International Journal of Offshore and Polar Engineering",
-    "doi": "10.17736/ijope.2019.jc747"
   },
   {
     "year": "2019",
@@ -240,16 +254,9 @@
   {
     "year": "2018",
     "type": "journal-article",
-    "title": "Performance Analysis of Multiple Wave Energy Converters Placed on a Floating Platform in the Frequency Domain",
-    "journal": "Energies",
-    "doi": "10.3390/en11020406"
-  },
-  {
-    "year": "2018",
-    "type": "journal-article",
     "title": "A study on performance assessment of WEC rotor in the Jeju western waters",
-    "journal": "Ocean Systems Engineering",
-    "doi": "10.12989/ose.2018.8.4.361"
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
+    "doi": "10.12989/OSE.2018.8.4.631"
   },
   {
     "year": "2018",
@@ -262,8 +269,8 @@
     "year": "2018",
     "type": "journal-article",
     "title": "Fatigue analysis of floating wind turbine support structure applying modified stress transfer function by artificial neural network",
-    "journal": "Ocean Engineering",
-    "doi": "10.1016/j.oceaneng.2017.12.009"
+    "journal": "OCEAN ENGINEERING",
+    "doi": "10.1016/J.OCEANENG.2017.12.009"
   },
   {
     "year": "2018",
@@ -271,6 +278,13 @@
     "title": "Numerical and Experimental Study for a Cylindrical Wave Energy Converter with Different Rotational Axes",
     "journal": "Proceedings of the International Offshore and Polar Engineering Conference",
     "doi": ""
+  },
+  {
+    "year": "2018",
+    "type": "journal-article",
+    "title": "Performance Analysis of Multiple Wave Energy Converters Placed on a Floating Platform in the Frequency Domain",
+    "journal": "ENERGIES",
+    "doi": "10.3390/EN11020406"
   },
   {
     "year": "2017",
@@ -281,13 +295,6 @@
   },
   {
     "year": "2017",
-    "type": "journal-article",
-    "title": "Performance changes of a floating offshore wind turbine with broken mooring line",
-    "journal": "Renewable Energy",
-    "doi": "10.1016/j.renene.2016.08.044"
-  },
-  {
-    "year": "2017",
     "type": "conference-paper",
     "title": "Dynamic behaviors of wave energy converters connected to large semi-submersible",
     "journal": "Proceedings of the International Offshore and Polar Engineering Conference",
@@ -295,17 +302,17 @@
   },
   {
     "year": "2017",
-    "type": "conference-paper",
+    "type": "journal-article",
     "title": "INFLUENCE OF SECOND-ORDER DIFFERENCE-FREQUENCY WAVE LOADS ON THE FLOATING WIND-WAVE HYBRID PLATFORM",
-    "journal": "International Conference on Ocean, Offshore and Arctic Engineering",
-    "doi": "10.1115/OMAE2017-61273"
+    "journal": "PROCEEDINGS OF THE ASME 36TH INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE AND ARCTIC ENGINEERING, 2017, VOL 7B",
+    "doi": ""
   },
   {
     "year": "2017",
-    "type": "conference-paper",
-    "title": "Influence of second-order difference-frequency wave loads on the floating wind-wave hybrid platform",
-    "journal": "Proceedings of the International Conference on Offshore Mechanics and Arctic Engineering - OMAE",
-    "doi": "10.1115/OMAE201761273"
+    "type": "journal-article",
+    "title": "Performance changes of a floating offshore wind turbine with broken mooring line",
+    "journal": "RENEWABLE ENERGY",
+    "doi": "10.1016/J.RENENE.2016.08.044"
   },
   {
     "year": "2016",
@@ -320,13 +327,6 @@
     "title": "Global performance of a square-type semi-submersible KRISO multi-unit floating wind turbine; numerical simulation vs model test",
     "journal": "Proceedings of the International Offshore and Polar Engineering Conference",
     "doi": ""
-  },
-  {
-    "year": "2016",
-    "type": "journal-article",
-    "title": "One-way coupled dynamic analysis of floating platform with wave energy converters",
-    "journal": "Journal of Ocean and Wind Energy",
-    "doi": "10.17736/jowe.2016.tsr08"
   },
   {
     "year": "2015",
@@ -357,25 +357,18 @@
     "doi": "10.17736/jowe.2015.bhr03"
   },
   {
-    "year": "2015",
-    "type": "journal-article",
-    "title": "The dynamic coupling effects of a MUFOWT (multiple unit floating offshore wind turbine) with partially broken blade",
-    "journal": "Journal of Ocean and Wind Energy",
-    "doi": "10.17736/jowe.2015.mkr01"
-  },
-  {
     "year": "2014",
     "type": "journal-article",
-    "title": "Aero-elastic-control-floater-mooring coupled dynamic analysis of floating offshore wind turbine in maximum operation and survival conditions",
-    "journal": "",
+    "title": "Aero-Elastic-Control-Floater-Mooring Coupled Dynamic Analysis of Floating Offshore Wind Turbine in Maximum Operation and Survival Conditions",
+    "journal": "JOURNAL OF OFFSHORE MECHANICS AND ARCTIC ENGINEERING-TRANSACTIONS OF THE ASME",
     "doi": "10.1115/1.4025029"
   },
   {
     "year": "2014",
     "type": "journal-article",
     "title": "Coupled dynamic analysis of multiple wind turbines on a large single floater",
-    "journal": "Ocean Engineering",
-    "doi": "10.1016/j.oceaneng.2014.10.001"
+    "journal": "OCEAN ENGINEERING",
+    "doi": "10.1016/J.OCEANENG.2014.10.001"
   },
   {
     "year": "2014",
@@ -388,7 +381,7 @@
     "year": "2014",
     "type": "journal-article",
     "title": "Local dynamic buckling of FPSO steel catenary riser by coupled time-domain simulations",
-    "journal": "Ocean Systems Engineering",
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
     "doi": "10.12989/OSE.2014.4.3.215"
   },
   {
@@ -409,29 +402,29 @@
     "year": "2013",
     "type": "journal-article",
     "title": "Influence of failed blade-pitch-control system to FOWT by aero-elastic-control-floater-mooring coupled dynamic analysis",
-    "journal": "Ocean Systems Engineering",
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
     "doi": "10.12989/OSE.2013.3.4.295"
   },
   {
     "year": "2013",
     "type": "journal-article",
     "title": "Rotor-floater-tether coupled dynamics including second-order sum-frequency wave loads for a mono-column-TLP-type FOWT (floating offshore wind turbine)",
-    "journal": "",
-    "doi": "10.1016/j.oceaneng.2013.01.010"
+    "journal": "OCEAN ENGINEERING",
+    "doi": "10.1016/J.OCEANENG.2013.01.010"
   },
   {
     "year": "2013",
-    "type": "conference-paper",
-    "title": "Turbine-Floater-tether coupled dynamic analysis including second-order sum-Frequency wave loads for a TLP-Type FOWT (FLOATING OFFSHORE WIND TURBINE)",
-    "journal": "",
-    "doi": "10.1115/OMAE2013-11261"
+    "type": "journal-article",
+    "title": "TURBINE-FLOATER-TETHER COUPLED DYNAMIC ANALYSIS INCLUDING SECOND-ORDER SUM-FREQUENCY WAVE LOADS FOR A TLP-TYPE FOWT (FLOATING OFFSHORE WIND TURBINE)",
+    "journal": "PROCEEDINGS OF THE ASME 32ND INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE AND ARCTIC ENGINEERING - 2013 - VOL 8",
+    "doi": ""
   },
   {
     "year": "2012",
-    "type": "conference-paper",
-    "title": "Aero-elastic-floater-mooring coupled dynamic analysis of FOWT (floating offshore wind turbine) in maximum operation and survival conditions",
-    "journal": "",
-    "doi": "10.1115/OMAE2012-83545"
+    "type": "journal-article",
+    "title": "AERO-ELASTIC-FLOATER-MOORING COUPLED DYNAMIC ANALYSIS OF FOWT (FLOATING OFFSHORE WIND TURBINE) IN MAXIMUM OPERATION AND SURVIVAL CONDITIONS",
+    "journal": "PROCEEDINGS OF THE ASME 31ST INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE AND ARCTIC ENGINEERING, 2012, VOL 4",
+    "doi": ""
   },
   {
     "year": "2012",
@@ -451,7 +444,7 @@
     "year": "2011",
     "type": "journal-article",
     "title": "Discussion on \"Rotor-floater-mooring coupled dynamic analysis of mono-column-TLP-type FOWT (Floating Offshore Wind Turbine)\"",
-    "journal": "Ocean Systems Engineering",
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
     "doi": "10.12989/OSE.2011.1.3.243"
   },
   {
@@ -465,7 +458,7 @@
     "year": "2011",
     "type": "journal-article",
     "title": "Rotor-floater-mooring coupled dynamic analysis of mono-column-TLP-type FOWT (Floating Offshore Wind Turbine)",
-    "journal": "Ocean Systems Engineering",
+    "journal": "OCEAN SYSTEMS ENGINEERING-AN INTERNATIONAL JOURNAL",
     "doi": "10.12989/OSE.2011.1.1.095"
   },
   {
@@ -477,29 +470,22 @@
   },
   {
     "year": "2010",
-    "type": "conference-paper",
-    "title": "Loads on tie-down systems for floating drilling rigs during hurricane conditions",
-    "journal": "International Journal of Offshore and Polar Engineering",
+    "type": "journal-article",
+    "title": "Loads on Tie-down Systems for Floating Drilling Rigs During Hurricane Conditions",
+    "journal": "INTERNATIONAL JOURNAL OF OFFSHORE AND POLAR ENGINEERING",
     "doi": ""
   },
   {
     "year": "2010",
-    "type": "conference-paper",
-    "title": "Rotor-floater-mooring coupled dynamic analysis of mini TLP-type offshore floating wind turbines",
-    "journal": "",
-    "doi": "10.1115/OMAE2010-20555"
+    "type": "journal-article",
+    "title": "ROTOR-FLOATER-MOORING COUPLED DYNAMIC ANALYSIS OF MINI TLP-TYPE OFFSHORE FLOATING WIND TURBINES",
+    "journal": "PROCEEDINGS OF THE ASME 29TH INTERNATIONAL CONFERENCE ON OCEAN, OFFSHORE AND ARCTIC ENGINEERING 2010, VOL 3",
+    "doi": ""
   },
   {
     "year": "2010",
     "type": "conference-paper",
     "title": "Tie-down loads for drilling rigs and modules on floating structures",
-    "journal": "",
-    "doi": ""
-  },
-  {
-    "year": "2009",
-    "type": "conference-paper",
-    "title": "Loads on tie-down systems for floating drilling rigs during hurricane conditions",
     "journal": "",
     "doi": ""
   }
