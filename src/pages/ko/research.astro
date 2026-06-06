@@ -1,0 +1,199 @@
+---
+import HeaderKo from "../../components/HeaderKo.astro";
+import Footer from "../../components/Footer.astro";
+import FundedProjects from "../../components/FundedProjects.astro";
+---
+
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연구분야 | 부유체 동역학 연구실</title>
+  </head>
+
+  <body>
+    <HeaderKo />
+
+    <main class="page">
+      <p class="intro-label">RESEARCH</p>
+
+      <h1>
+        해양 부유체 시스템의
+        <br />
+        동역학 및 제어
+      </h1>
+
+      <p class="intro-text">
+        부유체 동역학 연구실은 해양 부유체, 계류 시스템, 파랑·바람·조류
+        환경하중, 제어 시스템이 결합된 복잡한 해양 시스템의 동적 거동을
+        연구합니다.
+      </p>
+
+      <section class="research-interests">
+        <div class="section-header">
+          <p class="section-label">RESEARCH INTERESTS</p>
+
+          <h2>
+            주요 연구분야
+          </h2>
+
+          <p class="section-description">
+            본 연구실은 해양 부유체 시스템의 동역학 해석, 유체력 모델링,
+            부유식 해상풍력, 디지털 트윈 및 지능형 제어 기술을 중심으로
+            미래 해양공학 시스템을 연구합니다.
+          </p>
+        </div>
+
+        <div class="interest-grid">
+          <article class="interest-card">
+            <h3>해양 부유체 시스템</h3>
+            <p>
+              반잠수식 플랫폼, TLP, Spar 및 차세대 해양 부유 구조물의 운동
+              응답, 안정성 및 설계 성능을 해석합니다.
+            </p>
+          </article>
+
+          <article class="interest-card">
+            <h3>부유체–계류 연성 동역학</h3>
+            <p>
+              파랑, 바람, 조류 환경에서 부유체와 계류 시스템이 상호작용하는
+              비선형 동적 응답을 시간영역에서 해석합니다.
+            </p>
+          </article>
+
+          <article class="interest-card">
+            <h3>해양 유체동역학</h3>
+            <p>
+              파랑–구조물 상호작용, 방사·회절 문제, Morison 하중 및
+              비선형 유체력 모델링을 연구합니다.
+            </p>
+          </article>
+
+          <article class="interest-card">
+            <h3>부유식 해상풍력</h3>
+            <p>
+              부유식 해상풍력발전기의 공력–유체력–구조–제어 연성 거동,
+              플랫폼 최적화 및 극한응답을 해석합니다.
+            </p>
+          </article>
+
+          <article class="interest-card">
+            <h3>디지털 트윈 및 AI</h3>
+            <p>
+              데이터 기반 모델링, 실시간 상태 추정, 예측 및 디지털 트윈
+              프레임워크를 해양 부유체 시스템에 적용합니다.
+            </p>
+          </article>
+
+          <article class="interest-card">
+            <h3>해양 시스템 제어</h3>
+            <p>
+              부유체 운동 저감, 에너지 성능 향상, 지능형 운용을 위한
+              제어 알고리즘 및 통합 해석 방법론을 개발합니다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <FundedProjects />
+    </main>
+
+    <Footer />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        background:
+          radial-gradient(circle at top left, rgba(14,165,233,0.08), transparent 30%),
+          #f4f7fb;
+        color: #0f172a;
+      }
+
+      .page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 90px 28px 120px;
+      }
+
+      .intro-label,
+      .section-label {
+        color: #0f766e;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 700;
+        margin-bottom: 18px;
+      }
+
+      h1 {
+        font-size: clamp(46px, 8vw, 86px);
+        line-height: 1.08;
+        letter-spacing: -0.06em;
+        margin: 0 0 28px;
+      }
+
+      .intro-text {
+        max-width: 780px;
+        color: #475569;
+        font-size: 20px;
+        line-height: 1.85;
+      }
+
+      .research-interests {
+        margin-top: 120px;
+      }
+
+      .section-header {
+        margin-bottom: 56px;
+      }
+
+      .section-header h2 {
+        font-size: clamp(40px, 6vw, 70px);
+        line-height: 1.05;
+        letter-spacing: -0.05em;
+        margin: 0 0 24px;
+      }
+
+      .section-description {
+        max-width: 760px;
+        color: #475569;
+        font-size: 19px;
+        line-height: 1.85;
+      }
+
+      .interest-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+
+      .interest-card {
+        background: rgba(255,255,255,0.78);
+        border: 1px solid rgba(15,23,42,0.08);
+        border-radius: 30px;
+        padding: 34px;
+        min-height: 260px;
+        backdrop-filter: blur(10px);
+      }
+
+      .interest-card h3 {
+        margin: 0 0 18px;
+        font-size: 25px;
+        line-height: 1.3;
+        letter-spacing: -0.04em;
+      }
+
+      .interest-card p {
+        margin: 0;
+        color: #475569;
+        line-height: 1.85;
+      }
+
+      @media (max-width: 980px) {
+        .interest-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </body>
+</html>
