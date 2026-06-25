@@ -1,0 +1,77 @@
+<section class="contact-grid">
+  <article class="contact-card">
+    <p class="card-label">이메일</p>
+
+    <h3>연구 문의</h3>
+
+    <p>
+      yhbae@hongik.ac.kr
+    </p>
+  </article>
+
+  <article class="contact-card">
+    <p class="card-label">소속</p>
+
+    <h3>홍익대학교</h3>
+
+    <p>
+      기계시스템디자인공학과<br />
+      부유체 동역학 연구실
+    </p>
+  </article>
+
+  <article class="contact-card">
+    <p class="card-label">위치</p>
+
+    <h3>서울특별시</h3>
+
+    <p>
+      홍익대학교 서울캠퍼스<br />
+      서울특별시 마포구 와우산로 94
+    </p>
+  </article>
+</section>
+
+<style>
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-top: 70px;
+  }
+
+  .contact-card {
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(15, 23, 42, 0.08);
+    border-radius: 28px;
+    padding: 34px;
+    min-height: 230px;
+    backdrop-filter: blur(10px);
+  }
+
+  .card-label {
+    margin: 0 0 18px;
+    color: #0f766e;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+  }
+
+  .contact-card h3 {
+    margin: 0 0 18px;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .contact-card p {
+    color: #475569;
+    line-height: 1.8;
+  }
+
+  @media (max-width: 980px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
