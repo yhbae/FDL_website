@@ -1,5 +1,13 @@
 export const news = [
   {
+  date: "2026.06",
+  category: "Award",
+  title:
+    "Two FDL Students Won Best Paper and Best Presentation Awards at the 2026 KWEA Spring Conference",
+  description:
+    "Congratulations to our students for receiving the Best Paper Award and the Best Presentation Award at the 2026 Korean Wind Energy Association Spring Conference.",
+  },
+  {
     date: "2026.05",
     category: "News",
     title: "FDL website launched",
