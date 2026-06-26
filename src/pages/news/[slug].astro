@@ -1,0 +1,107 @@
+---
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+import { news } from "../../data/news";
+
+export function getStaticPaths() {
+  return news.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{item.title} | Floater Dynamics Laboratory</title>
+  </head>
+
+  <body>
+    <Header />
+
+    <main class="page">
+      <a href="/news" class="back-link">← Back to News</a>
+
+      <p class="label">{item.category}</p>
+
+      <h1>{item.title}</h1>
+
+      <p class="date">{item.date}</p>
+
+      {item.image && (
+        <img src={item.image} alt={item.title} class="hero-image" />
+      )}
+
+      <section class="content">
+        {item.content?.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </section>
+    </main>
+
+    <Footer />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Inter, system-ui, sans-serif;
+        background: #f4f7fb;
+        color: #0f172a;
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 90px 28px 120px;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 50px;
+        color: #0369a1;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      .label {
+        color: #0f766e;
+        font-size: 13px;
+        letter-spacing: 0.18em;
+        font-weight: 800;
+      }
+
+      h1 {
+        font-size: clamp(40px, 7vw, 72px);
+        line-height: 1.05;
+        letter-spacing: -0.05em;
+        margin: 20px 0 20px;
+      }
+
+      .date {
+        color: #64748b;
+        font-weight: 700;
+        margin-bottom: 44px;
+      }
+
+      .hero-image {
+        width: 100%;
+        max-height: 620px;
+        object-fit: contain;
+        border-radius: 28px;
+        background: white;
+        border: 1px solid rgba(15,23,42,0.08);
+        margin-bottom: 54px;
+      }
+
+      .content p {
+        color: #475569;
+        font-size: 20px;
+        line-height: 1.9;
+      }
+    </style>
+  </body>
+</html>

@@ -19,6 +19,12 @@
 
   <div class="interest-grid">
     <article class="interest-card">
+      <img
+        src="/images/research/offshore-floating-systems.png"
+        alt="Offshore Floating Systems"
+        class="interest-image"
+      />
+
       <h3>Offshore Floating Systems</h3>
 
       <p>
@@ -29,6 +35,12 @@
     </article>
 
     <article class="interest-card">
+      <img
+        src="/images/research/mooring-dynamics.png"
+        alt="Floater–Mooring Coupled Dynamics"
+        class="interest-image"
+      />
+
       <h3>Floater–Mooring Coupled Dynamics</h3>
 
       <p>
@@ -39,6 +51,12 @@
     </article>
 
     <article class="interest-card">
+      <img
+        src="/images/research/marine-hydrodynamics.png"
+        alt="Marine Hydrodynamics"
+        class="interest-image"
+      />
+
       <h3>Marine Hydrodynamics</h3>
 
       <p>
@@ -49,6 +67,12 @@
     </article>
 
     <article class="interest-card">
+      <img
+        src="/images/research/floating-wind.png"
+        alt="Floating Offshore Wind Turbines"
+        class="interest-image"
+      />
+
       <h3>Floating Offshore Wind Turbines</h3>
 
       <p>
@@ -59,6 +83,12 @@
     </article>
 
     <article class="interest-card">
+      <img
+        src="/images/research/digital-twin-ai.png"
+        alt="Digital Twin and Artificial Intelligence"
+        class="interest-image"
+      />
+
       <h3>Digital Twin & AI</h3>
 
       <p>
@@ -69,6 +99,12 @@
     </article>
 
     <article class="interest-card">
+      <img
+        src="/images/research/offshore-control.png"
+        alt="Offshore Control Systems"
+        class="interest-image"
+      />
+
       <h3>Offshore Control Systems</h3>
 
       <p>
@@ -95,7 +131,6 @@
     font-size: 13px;
     letter-spacing: 0.18em;
     font-weight: 700;
-
     margin-bottom: 18px;
   }
 
@@ -103,13 +138,11 @@
     font-size: clamp(44px, 6vw, 76px);
     line-height: 0.96;
     letter-spacing: -0.05em;
-
     margin: 0 0 24px;
   }
 
   .section-description {
     max-width: 1040px;
-
     color: #475569;
     font-size: 19px;
     line-height: 1.8;
@@ -123,16 +156,12 @@
 
   .interest-card {
     background: rgba(255,255,255,0.76);
-
     border: 1px solid rgba(15,23,42,0.08);
     border-radius: 30px;
-
-    padding: 34px;
-
+    padding: 20px 20px 30px;
     backdrop-filter: blur(10px);
-
-    min-height: 260px;
-
+    min-height: 500px;
+    overflow: hidden;
     transition:
       transform 0.25s ease,
       border-color 0.25s ease,
@@ -141,16 +170,25 @@
 
   .interest-card:hover {
     transform: translateY(-6px);
-
     border-color: rgba(14,165,233,0.22);
+    box-shadow: 0 20px 40px rgba(15,23,42,0.06);
+  }
 
-    box-shadow:
-      0 20px 40px rgba(15,23,42,0.06);
+  .interest-image {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 22px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(15,23,42,0.08);
+    background: #e2e8f0;
   }
 
   .interest-card h3 {
     margin: 0 0 18px;
-
+    padding: 0 10px;
     font-size: 26px;
     line-height: 1.2;
     letter-spacing: -0.03em;
@@ -158,7 +196,7 @@
 
   .interest-card p {
     margin: 0;
-
+    padding: 0 10px;
     color: #475569;
     line-height: 1.8;
   }
@@ -166,6 +204,14 @@
   @media (max-width: 980px) {
     .interest-grid {
       grid-template-columns: 1fr;
+    }
+
+    .interest-card {
+      min-height: auto;
+    }
+
+    .interest-image {
+      height: 220px;
     }
   }
 </style>
